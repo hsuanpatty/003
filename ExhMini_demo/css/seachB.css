@@ -790,6 +790,7 @@ input[type=checkbox] {
 
   .button-grid .button--white {
     border-top: 0;
+    display: none;
   }
 }
 
