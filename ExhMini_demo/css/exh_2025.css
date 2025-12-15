@@ -9,17 +9,19 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 110px;
+    margin-bottom: 10px;
 }
 
 aside.ExhMiniTop-aside {
-    width: 25%;
-    padding: 20px 0 30px 40px;
+    width: 28%;
+    padding: 30px 0 30px 20px;
     position: relative;
 }
 
 #ExhMini-banner {
-    width: 75%;
+    width: 72%;
     max-width: 1020px;
+    margin: 0 auto;
 }
 
 #ExhMiniTop {
@@ -27,9 +29,8 @@ aside.ExhMiniTop-aside {
 }
 
 h1.ExhMiniTop-title {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     margin-left: -25px;
-    margin-top: 30px;
 }
 
 h1.ExhMiniTop-title span {
@@ -37,14 +38,14 @@ h1.ExhMiniTop-title span {
     color: #fff;
     border-radius: 30px;
     padding: 2px 35px 4px;
-    font-size: 2rem;
-    letter-spacing: .05rem;
+    font-size: 1.5rem;
+    letter-spacing: 0;
 }
 
 h2.ExhMiniTop-area span {
     border-left: solid 5px #8c001a;
     padding: 0 10px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     display: -webkit-box;
     overflow: hidden;
     word-break: break-all;
@@ -52,6 +53,9 @@ h2.ExhMiniTop-area span {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     max-height: 108px;
+
+    line-height: 35px;
+    letter-spacing: 0;
 }
 
 aside.ExhMiniTop-aside hr {
@@ -832,8 +836,54 @@ h3.ExhMini-box-title a {
 	display: none;
 }
 
-/*============== 平版尺寸 ==============*/
 
+@media (max-width: 1399.98px) {
+    aside.ExhMiniTop-aside {
+        width: 30%;
+    }
+
+    #ExhMini-banner {
+        width: 65%;
+    }
+}
+
+@media (max-width: 1199.98px) {
+     aside.ExhMiniTop-aside {
+        width: 32%;
+    }
+
+    h1.ExhMiniTop-title span,
+    h2.ExhMiniTop-area span {
+        font-size: 1.2rem;
+    }
+
+    #ExhMini-banner {
+        width: 68%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 991.98px) {
+    aside.ExhMiniTop-aside {
+        width: 40%;
+    }
+
+    h1.ExhMiniTop-title span,
+    h2.ExhMiniTop-area span {
+        font-size: 1.2rem;
+    }
+
+    #ExhMini-banner {
+        width: 60%;
+        margin: auto;
+    }
+
+    aside.ExhMiniTop-aside {
+    padding: 10px 0 30px 20px;
+    }
+}
+
+/*============== 平版尺寸 ==============*/
 @media (max-width: 768px) {
     /* ExhMiniTop*/
     #ExhMiniTop {
